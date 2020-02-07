@@ -1,5 +1,8 @@
 <?php
 
+use Illuminate\Support\Facades\Route;
+
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -11,6 +14,16 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+/**
+ * Rotas do Site
+ */
+Route::group(['namespace' => 'Site'], function () {
+	// Home
+	Route::get('/', 'HomeController@index')->name('home');
+	Route::get('home', 'HomeController@index');
+
+	// Contact Us
+	Route::get('contato', 'ContactController@index')->name('contact');
+	Route::post('contato', 'ContactController@create')->name('contact');
+
 });
