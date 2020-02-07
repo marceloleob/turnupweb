@@ -2,7 +2,6 @@
 
 @section('content')
 
-
     <div class="wrapper white-wrapper">
 		<div class="container inner pt-100">
 			<h2 class="title-color color-gray text-center">What We Do?</h2>

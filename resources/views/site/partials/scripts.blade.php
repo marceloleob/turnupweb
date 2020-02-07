@@ -1,4 +1,17 @@
 
+{{-- GOOGLE ANALYTICS --}}
+@if (env('APP_ENV') == 'production')
+	{{-- Global site tag (gtag.js) - Google Analytics --}}
+	<script async src="https://www.googletagmanager.com/gtag/js?id={!! env('GOOGLE_ANALYTICS_ID') !!}"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', "{!! env('GOOGLE_ANALYTICS_ID') !!}");
+	</script>
+@endif
+{{-- GOOGLE ANALYTICS --}}
+
 {{-- JS STYLE --}}
 {!! Html::script('style/js/jquery.min.js', ['defer' => 'defer']) !!}
 {!! Html::script('style/js/popper.min.js', ['defer' => 'defer']) !!}
@@ -24,3 +37,5 @@
 
 {{-- JS PAGE CUSTOM --}}
 @yield('js-custom')
+
+{{ env('APP_ENV') }}
