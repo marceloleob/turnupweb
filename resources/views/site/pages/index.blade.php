@@ -62,7 +62,7 @@
 		<div class="container inner">
 			<div class="row align-items-center">
 				<div class="col-lg-6 order-lg-2">
-					<figure><img src="#" srcset="style/images/concept/concept1.png 1x, style/images/concept/concept1@2x.png 2x" alt="" /></figure>
+					<figure><img src="#" srcset="style/images/concept/concept26.png 1x, style/images/concept/concept26@2x.png 2x" alt="" /></figure>
 				</div>
 				<div class="space20 d-md-none"></div>
 				<div class="space50 d-none d-md-block d-lg-none"></div>
