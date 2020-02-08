@@ -10,8 +10,8 @@
 		<ul class="navbar-nav flex-row align-items-center" data-sm-skip="true">
 			<li class="nav-item">
 				<div class="navbar-hamburger d-lg-none d-xl-none ml-auto">
-					<a href="#" class="btn btn-meander m-0"><img src="images/en.png" alt="English" /></a>
-					<a href="#" class="btn btn-white m-0"><img src="images/pt-br.png" alt="Português" /></a>
+					<a href="{!! url('locale', 'en') !!}" class="btn {{ ($locale == 'en') ? 'btn-meander' : 'btn-white' }} m-0"><img src="images/en.png" alt="English" /></a>
+					<a href="{!! url('locale', 'pt-br') !!}" class="btn {{ ($locale == 'pt-br') ? 'btn-meander' : 'btn-white' }} m-0"><img src="images/pt-br.png" alt="Português" /></a>
 				</div>
 			</li>
 			<li class="nav-item d-none d-lg-block pl-0 btn-icon-left">
