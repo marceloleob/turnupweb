@@ -2,8 +2,6 @@
 
 namespace App\Providers;
 
-use App\Service\ContactService;
-use App\Service\UserService;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\View;
@@ -29,7 +27,11 @@ class ViewServiceProvider extends ServiceProvider
     public function boot()
     {
 		// Retorna a localizacao do usuario
-		View::share('locale', str_replace('_', '-', strtolower(App::getLocale())));
+		View::composer('*', function($view)
+		{
+			$view->with('locale', str_replace('_', '-', strtolower(App::getLocale())));
+		});
+
 
 		// // binda os arquivos do admin
 		// View::composer('admin.*', function()

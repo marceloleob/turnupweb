@@ -16,7 +16,7 @@
 					data-whitespace="['normal','normal','normal','normal']"
 					data-frames='[{"delay":1000,"speed":1200,"frame":"0","from":"y:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
 					data-responsive="on"
-					data-responsive_offset="on" style="z-index: 9;">Web Design & PHP Development
+					data-responsive_offset="on" style="z-index: 9;">{!! trans('pages/home.slide.01.title') !!}
 				</div>
 				<div class="tp-caption font-weight-400 color-dark"
 					data-x="['left','left','center','center']"
@@ -30,7 +30,7 @@
 					data-whitespace="['normal','normal','normal','normal']"
 					data-frames='[{"delay":1500,"speed":1200,"frame":"0","from":"x:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
 					data-responsive="on"
-					data-responsive_offset="on" style="z-index: 9;">The best design to represent your business.
+					data-responsive_offset="on" style="z-index: 9;">{!! trans('pages/home.slide.01.text') !!}
 				</div>
 				<a class="tp-caption btn btn-l btn-purple"
 					data-x="['left','left','center','center']"
@@ -41,7 +41,7 @@
 					data-textAlign="['left','left','center','center']"
 					data-frames='[{"delay":2000,"speed":1200,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
 					data-responsive="on"
-					data-responsive_offset="on" style="z-index: 9;" href="#">See Our Projects
+					data-responsive_offset="on" style="z-index: 9;" href="#">{!! trans('pages/home.slide.01.button') !!}
 				</a>
 				<div class="tp-caption"
 					data-x="['left','left','center','center']"
@@ -88,7 +88,7 @@
 					data-whitespace="['normal','normal','normal','normal']"
 					data-frames='[{"delay":1000,"speed":1200,"frame":"0","from":"y:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
 					data-responsive="on"
-					data-responsive_offset="on" style="z-index: 9;">Responsive Website
+					data-responsive_offset="on" style="z-index: 9;">{!! trans('pages/home.slide.02.title') !!}
 				</div>
 				<div class="tp-caption font-weight-400 color-dark"
 					data-x="['left','left','center','center']"
@@ -97,12 +97,12 @@
 					data-voffset="['0','0','-190','20']"
 					data-fontsize="['25','22','25','19']"
 					data-lineheight="['35','32','35','29']"
-					data-width="['380','340','400','340']"
+					data-width="['480','340','400','340']"
 					data-textAlign="['left','left','center','center']"
 					data-whitespace="['normal','normal','normal','normal']"
 					data-frames='[{"delay":1500,"speed":1200,"frame":"0","from":"x:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
 					data-responsive="on"
-					data-responsive_offset="on" style="z-index: 9;">All of our sites can be viewed on any device (desktop, tablet and mobile).
+					data-responsive_offset="on" style="z-index: 9;">{!! trans('pages/home.slide.02.text') !!}
 				</div>
 				<a class="tp-caption btn btn-l btn-teal"
 					data-x="['left','left','center','center']"
@@ -113,7 +113,7 @@
 					data-textAlign="['left','left','center','center']"
 					data-frames='[{"delay":2000,"speed":1200,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
 					data-responsive="on"
-					data-responsive_offset="on" style="z-index: 9;" href="#">See Our Projects
+					data-responsive_offset="on" style="z-index: 9;" href="#">{!! trans('pages/home.slide.02.button') !!}
 				</a>
 				<div class="tp-caption"
 					data-x="['right','right','center','center']"
@@ -159,7 +159,7 @@
 					data-whitespace="['normal','normal','normal','normal']"
 					data-frames='[{"delay":1000,"speed":1200,"frame":"0","from":"y:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
 					data-responsive="on"
-					data-responsive_offset="on" style="z-index: 9;">Fully Customized Websites
+					data-responsive_offset="on" style="z-index: 9;">{!! trans('pages/home.slide.03.title') !!}
 				</div>
 				<div class="tp-caption font-weight-400 color-dark"
 					data-x="['left','left','center','center']"
@@ -173,7 +173,7 @@
 					data-whitespace="['normal','normal','normal','normal']"
 					data-frames='[{"delay":1500,"speed":1200,"frame":"0","from":"x:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
 					data-responsive="on"
-					data-responsive_offset="on" style="z-index: 9;">We create customized systems for your business.
+					data-responsive_offset="on" style="z-index: 9;">{!! trans('pages/home.slide.03.text') !!}
 				</div>
 				<a class="tp-caption btn btn-l btn-purple"
 					data-x="['left','left','center','center']"
@@ -184,7 +184,7 @@
 					data-textAlign="['left','left','center','center']"
 					data-frames='[{"delay":2000,"speed":1200,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
 					data-responsive="on"
-					data-responsive_offset="on" style="z-index: 9;" href="#">See Our Projects
+					data-responsive_offset="on" style="z-index: 9;" href="#">{!! trans('pages/home.slide.03.button') !!}
 				</a>
 				<div class="tp-caption"
 					data-x="['left','left','center','center']"

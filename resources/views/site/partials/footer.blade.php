@@ -5,7 +5,7 @@
 		<div class="space30"></div>
 		<p>© {!! date('Y') !!} MarceloLeoDEV. All rights reserved.</p>
 		<div class="space10"></div>
-		<ul class="social social-mute social-s ml-auto">
+		<ul class="social social-color social-s ml-auto">
 			<li><a href="https://twitter.com/marceloleob" target="_blank"><i class="jam jam-twitter"></i></a></li>
 			<li><a href="https://www.facebook.com/marceloleob" target="_blank"><i class="jam jam-facebook"></i></a></li>
 			<li><a href="https://www.instagram.com/marceloleob" target="_blank"><i class="jam jam-instagram"></i></a></li>

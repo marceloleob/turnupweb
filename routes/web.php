@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use Illuminate\Support\Facades\Session;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +13,17 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
+/**
+ * Change Language
+ */
+Route::get('locale/{locale?}', function ($locale) {
+	// set new language
+	Session::put('locale', $locale);
+	// go back
+	return redirect()->back();
+});
+
 
 /**
  * Rotas do Site
