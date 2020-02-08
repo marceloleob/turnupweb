@@ -553,6 +553,9 @@ canvas {
 .navbar-other .nav-item+.nav-item {
     padding-left: 0.8rem;
 }
+.navbar-other .nav-item:last-child {
+    margin-left: 0.5rem;
+}
 .navbar-other .nav-item+.nav-item.search-dropdown {
     padding-left: 1rem !important;
 }

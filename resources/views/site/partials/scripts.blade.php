@@ -37,5 +37,3 @@
 
 {{-- JS PAGE CUSTOM --}}
 @yield('js-custom')
-
-{{ env('APP_ENV') }}

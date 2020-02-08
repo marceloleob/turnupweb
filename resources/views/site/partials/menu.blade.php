@@ -14,7 +14,7 @@
 					<a href="#" class="btn btn-white m-0"><img src="images/pt-br.png" alt="Português" /></a>
 				</div>
 			</li>
-			<li class="nav-item d-none d-lg-block pl-0">
+			<li class="nav-item d-none d-lg-block pl-0 btn-icon-left">
 				<a href="#" class="btn btn-meander m-0"><img src="images/en.png" alt="English" /></a>
 			</li>
 			<li class="nav-item d-none d-lg-block pl-0">
