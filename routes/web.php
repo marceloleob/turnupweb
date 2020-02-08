@@ -35,6 +35,6 @@ Route::group(['namespace' => 'Site'], function () {
 
 	// Contact Us
 	Route::get('contato', 'ContactController@index')->name('contact');
-	Route::post('contato', 'ContactController@create')->name('contact');
+	Route::post('contato', 'ContactController@send')->name('contact');
 
 });

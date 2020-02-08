@@ -1,4 +1,10 @@
 
+{{-- SCROLL PART --}}
+<div id="scroll">
+	<a href="#"><span class="icon icon-blob color-blue"><i class="jam jam-arrow-circle-up-f color-white"></i></span></a>
+</div>
+{{-- SCROLL PART --}}
+
 <div class="container inner pt-80 pb-80">
 	<div class="widget">
 		<img src="#" srcset="style/images/logo-light.png 1x, style/images/logo-light@2x.png 2x" alt="" />

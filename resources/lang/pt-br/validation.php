@@ -13,6 +13,8 @@ return [
     |
     */
 
+	'google'               => 'O Google acredita que você seja um robô!',
+
     'accepted'             => 'O campo <strong>:attribute</strong> deve ser aceito.',
     'active_url'           => 'O campo <strong>:attribute</strong> deve conter uma URL válida.',
     'after'                => 'O campo <strong>:attribute</strong> deve conter uma data posterior a :date.',

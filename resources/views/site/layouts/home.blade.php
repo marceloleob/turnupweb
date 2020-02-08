@@ -9,14 +9,9 @@
 
 	<div class="content-wrapper">
 		{{-- MENU --}}
-		<nav class="navbar absolute transparent navbar-expand-lg nav-uppercase">
+		<nav class="navbar absolute navbar-fancy navbar-expand-lg nav-uppercase">
 			@include('site.partials.menu')
 		</nav>
-
-		{{-- INFO --}}
-		<div class="offcanvas-info inverse-text">
-			@include('site.partials.info')
-		</div>
 
 		{{-- HEADER --}}
 		<div class="wrapper bg-opacity-default">

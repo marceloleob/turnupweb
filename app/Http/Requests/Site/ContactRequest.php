@@ -2,29 +2,52 @@
 
 namespace App\Http\Requests\Site;
 
-use Illuminate\Foundation\Http\FormRequest;
+use App\Filters\Phone;
+use App\Http\Requests\BaseRequest;
 
-class ContactRequest extends FormRequest
+class ContactRequest extends BaseRequest
 {
-    /**
-     * Determine if the user is authorized to make this request.
-     *
-     * @return bool
-     */
-    public function authorize()
-    {
-        return false;
-    }
+	/**
+	 * Determine if the user is authorized to make this request.
+	 *
+	 * @var boolean
+	 */
+	public $authorize = true;
 
-    /**
-     * Get the validation rules that apply to the request.
-     *
-     * @return array
-     */
-    public function rules()
-    {
-        return [
-            //
-        ];
-    }
+	/**
+	 * Custom filter rules
+	 *
+	 * @var array
+	 */
+	public static $customFilters = [
+		'phone'   => Phone::class,
+	];
+
+	/**
+	 * Filter rules
+	 *
+	 * @var array
+	 */
+	public static $filters = [
+		'name'    => 'trim|capitalize|escape',
+		'email'   => 'trim|lowercase',
+		'phone'   => 'digit|phone',
+		'subject' => 'trim',
+		'text'    => 'trim',
+		'read'    => 'cast:boolean',
+	];
+
+	/**
+	 * Validation rules
+	 *
+	 * @var array
+	 */
+	public static $validations = [
+		'name'    => 'required|min:2|max:100',
+		'email'   => 'required|min:3|max:100|email',
+		'phone'   => 'required',
+		'subject' => 'required|min:2|max:100',
+		'text'    => 'required|min:5|max:2000',
+		'read'    => 'boolean',
+	];
 }

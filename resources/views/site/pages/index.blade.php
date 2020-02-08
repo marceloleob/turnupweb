@@ -105,7 +105,6 @@
 
 	<div class="wrapper bg-opacity-default">
 		<div class="container inner">
-			{{-- <div class="space140"></div> --}}
 			<div class="row align-items-center">
 				<div class="col-lg-6">
 					<figure><img src="#" srcset="style/images/concept/concept12.png 1x, style/images/concept/concept12@2x.png 2x" alt="" /></figure>
@@ -118,13 +117,10 @@
 					<div class="space20"></div>
 					<p>{!! trans('pages/home.wrapper.04.context.text') !!}</p>
 					<div class="space10"></div>
-					<a href="#" class="btn btn-default">{!! trans('pages/home.wrapper.04.context.button') !!}</a>
+					<a href="{!! route('contact') !!}" class="btn btn-default">{!! trans('pages/home.wrapper.04.context.button') !!}</a>
 				</div>
 			</div>
 		</div>
 	</div>
 
-	{{-- SCROLL PART --}}
-    <a href="#" id="scroll" class="icon icon-blob icon-blob-cobalt color-cobalt mr-25"><span><i class="jam jam-arrow-circle-up-f"></i></span></a>
-    {{-- SCROLL PART --}}
 @stop
