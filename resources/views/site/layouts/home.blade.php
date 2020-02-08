@@ -9,7 +9,8 @@
 
 	<div class="content-wrapper">
 		{{-- MENU --}}
-		<nav class="navbar absolute navbar-fancy navbar-expand-lg nav-uppercase">
+		{{-- <nav class="navbar absolute navbar-fancy navbar-expand-lg nav-uppercase"> --}}
+		<nav class="navbar absolute navbar-fancy navbar-expand-lg nav-uppercase flex-column">
 			@include('site.partials.menu')
 		</nav>
 

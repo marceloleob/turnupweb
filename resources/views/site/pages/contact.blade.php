@@ -19,7 +19,7 @@
 		<div class="container inner text-center">
 			<div class="space140"></div>
 			<h1 class="page-title">{!! trans('pages/contact.title') !!}</h1>
-			<p class="lead">Aenean lacinia bibendum nulla sed consectetur</p>
+			<p class="lead">{!! trans('pages/contact.title.text') !!}</p>
 		</div>
 	</div>
     {{-- BREADCRUMB --}}
@@ -27,8 +27,8 @@
 	{{-- CONTACT --}}
     <div class="wrapper light-wrapper">
 		<div class="container inner">
-			<h3 class="display-3">Get in Touch</h3>
-			<p class="lead">Have any questions? Reach out to us from our contact form and we will get back to you shortly.</p>
+			<h3 class="display-3">{!! trans('pages/contact.subtitle') !!}</h3>
+			<p class="lead">{!! trans('pages/contact.subtitle.text') !!}</p>
 	        <div class="space40"></div>
 			<div class="row">
 				<div class="col-lg-12">
@@ -42,7 +42,7 @@
 							<div class="form-row">
 								<div class="col-lg-12 col-xl-12">
 									<div class="form-group">
-										{!! Form::text('name', old('name'), ['class' => 'form-control text', 'placeholder' => 'Nome completo']) !!}
+										{!! Form::text('name', old('name'), ['class' => 'form-control text', 'placeholder' => trans('pages/contact.placeholder.name')]) !!}
                                     	{!! Form::errorField('name', $errors) !!}
 									</div>
 								</div>
@@ -50,13 +50,13 @@
 							<div class="form-row">
 								<div class="col-lg-12 col-xl-6">
 									<div class="form-group">
-										{!! Form::text('email', old('email'), ['class' => 'form-control text', 'placeholder' => 'E-mail']) !!}
+										{!! Form::text('email', old('email'), ['class' => 'form-control text', 'placeholder' => trans('pages/contact.placeholder.email')]) !!}
 										{!! Form::errorField('email', $errors) !!}
 									</div>
 								</div>
 								<div class="col-lg-12 col-xl-6">
 									<div class="form-group">
-										{!! Form::text('phone', old('phone'), ['class' => 'form-control phone phoneOnly', 'placeholder' => 'Telefone']) !!}
+										{!! Form::text('phone', old('phone'), ['class' => 'form-control phone phoneOnly', 'placeholder' => trans('pages/contact.placeholder.phone')]) !!}
 										{!! Form::errorField('phone', $errors) !!}
 									</div>
 								</div>
@@ -64,7 +64,7 @@
 							<div class="form-row">
 								<div class="col-lg-12 col-xl-12">
 									<div class="form-group">
-										{!! Form::text('subject', old('subject'), ['class' => 'form-control text', 'placeholder' => 'Assunto']) !!}
+										{!! Form::text('subject', old('subject'), ['class' => 'form-control text', 'placeholder' => trans('pages/contact.placeholder.subject')]) !!}
 										{!! Form::errorField('subject', $errors) !!}
 									</div>
 								</div>
@@ -72,7 +72,7 @@
 							<div class="form-row">
 								<div class="col-lg-12 col-xl-12">
 									<div class="form-group">
-										{!! Form::textarea('text', old('text'), ['class' => 'form-control textarea', 'placeholder' => 'Seu texto', 'rows' => '5']) !!}
+										{!! Form::textarea('text', old('text'), ['class' => 'form-control textarea', 'placeholder' => trans('pages/contact.placeholder.text'), 'rows' => '5']) !!}
 										{!! Form::errorField('text', $errors) !!}
 									</div>
 								</div>
@@ -82,13 +82,13 @@
 									<div class="form-group">
 										{!! Form::hidden('site_key', env('CAPTCHA_WEBSITE_KEY'), ['id' => 'site_key']) !!}
 										{!! Form::hidden('recaptcha', '', ['id' => 'recaptcha']) !!}
-										{!! Form::button(' Enviar ', ['type' => 'submit', 'class' => 'submit btn btn_primary']) !!}
+										{!! Form::button(trans('pages/contact.send'), ['type' => 'submit', 'class' => 'submit btn btn_primary']) !!}
 									</div>
 								</div>
 							</div>
 							<div class="form-row">
 								<div class="col-lg-12 col-xl-12">
-									<p class="text-muted"><strong>*</strong> These fields are required.</p>
+									<p class="text-muted"><strong>*</strong> {!! trans('pages/contact.warning') !!}</p>
 								</div>
 							</div>
 						</div>
@@ -101,8 +101,8 @@
 							<div class="icon color-default fs-34 mr-25"> <i class="icofont-location-pin"></i> </div>
 						</div>
 						<div>
-							<h6 class="mb-5">Address</h6>
-							<address>Greater Boston, <br class="d-none d-md-block" />Massachusetts, US</address>
+							<h6 class="mb-5">{!! trans('pages/contact.infos.address.title') !!}</h6>
+							<address>{!! trans('pages/contact.infos.address.01') !!} <br class="d-none d-md-block" />{!! trans('pages/contact.infos.address.02') !!}</address>
 						</div>
 					</div>
 					<div class="d-flex flex-row">
@@ -110,8 +110,8 @@
 							<div class="icon color-default fs-34 mr-25"> <i class="icofont-telephone"></i> </div>
 						</div>
 						<div>
-							<h6 class="mb-5">Phone</h6>
-							<p>(727) 238-4933 <br class="d-none d-md-block" />&nbsp;</p>
+							<h6 class="mb-5">{!! trans('pages/contact.infos.phone.title') !!}</h6>
+							<p>{!! trans('pages/contact.infos.phone.01') !!} <br class="d-none d-md-block" />{!! trans('pages/contact.infos.phone.02') !!}</p>
 						</div>
 					</div>
 					<div class="d-flex flex-row">
@@ -119,8 +119,8 @@
 							<div class="icon color-default fs-34 mr-25"> <i class="icofont-mail-box"></i> </div>
 						</div>
 						<div>
-							<h6 class="mb-5">E-mail</h6>
-							<p>contact@marceloleodev.com <br class="d-none d-md-block" />marceloleodev@gmail.com</p>
+							<h6 class="mb-5">{!! trans('pages/contact.infos.email.title') !!}</h6>
+							<p>{!! trans('pages/contact.infos.email.01') !!} <br class="d-none d-md-block" />{!! trans('pages/contact.infos.email.02') !!}</p>
 						</div>
 					</div>
 				</div>

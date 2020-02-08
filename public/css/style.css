@@ -645,6 +645,30 @@ button.plain::-moz-focus-inner {
 button.plain:focus {
     outline: 0;
 }
+button.language {
+    cursor: pointer;
+    transition: transform .2s ease-in-out;
+    -moz-transition: transform .2s ease-in-out;
+    -webkit-transition: transform .2s ease-in-out;
+    vertical-align: middle;
+	border: 1px solid transparent;
+	border-radius: 50%;
+    background: none;
+    padding: 0;
+    margin: 3px;
+}
+button.language::-moz-focus-inner {
+    padding: 0;
+    border: 0 none;
+}
+button.language:focus {
+    outline: 0;
+}
+button.language .active {
+    transform: translateY(-8px) rotate(-45deg);
+    -moz-transform: translateY(-8px) rotate(-45deg);
+    -webkit-transform: translateY(-8px) rotate(-45deg);
+}
 button.hamburger {
     display: inline-block;
     width: 24px;
