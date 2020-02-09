@@ -2,7 +2,7 @@
 
 return [
 
-    /*
+	/*
     |--------------------------------------------------------------------------
     | Validation Language Lines
     |--------------------------------------------------------------------------
@@ -13,6 +13,7 @@ return [
     |
     */
 
+	'errors'               => 'Erros encontrados:',
 	'google'               => 'O Google acredita que você seja um robô!',
 
     'accepted'             => 'O campo <strong>:attribute</strong> deve ser aceito.',

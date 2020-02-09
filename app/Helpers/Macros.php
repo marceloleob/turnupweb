@@ -34,10 +34,10 @@ class Macros extends FormBuilder
         $alerts = [];
         // seta os tipos
         $types = [
-            'success' => 'fa-check',
-            'error'   => 'fa-times-circle',
-            'warning' => 'fa-exclamation-triangle',
-            'info'    => 'fa-info-circle'
+            'success' => 'jam-smiley',
+            'error'   => 'jam-close-rectangle-f',
+            'warning' => 'jam-alert-f',
+            'info'    => 'jam-info-f'
         ];
 
         foreach ($types as $type => $ico) {
@@ -45,7 +45,7 @@ class Macros extends FormBuilder
             if (Session::has($type)) {
                 // recupera o tipo
                 array_push($alerts, '<div class="feedback alert alert-' . (($type === 'error') ? 'danger' : $type) . ' fade in">');
-                array_push($alerts, '    <i class="fas ' . $ico . '"></i> &nbsp; ' . Session::get($type));
+                array_push($alerts, '    <i class="jam ' . $ico . '"></i> &nbsp; ' . Session::get($type));
                 array_push($alerts, '    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>');
                 array_push($alerts, '</div>');
             }
@@ -67,7 +67,7 @@ class Macros extends FormBuilder
 
         array_push($alerts, '<div class="feedback alert alert-danger fade in">');
         array_push($alerts, '    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>');
-        array_push($alerts, '    <i class="fas fa-times-circle"></i> &nbsp; Erros encontrados: ');
+        array_push($alerts, '    <i class="jam jam-close-rectangle-f"></i> &nbsp; ' . trans('validation.errors'));
         array_push($alerts, '    <ul>');
         foreach ($errors->all() as $error) {
             array_push($alerts, '        <li>' . $error . '</li>');
@@ -88,17 +88,9 @@ class Macros extends FormBuilder
 	public static function errorField($name, $errors)
 	{
 		$html  = '<span for="' . $name . '" generated="true" class="help-block">';
-		$html .= '    <i class="fa fa-times fa-fw"></i> :message';
+		$html .= '    <i class="jam jam jam-close-circle-f"></i> :message';
 		$html .= '</span>';
 
 		return $errors->first($name, $html);
     }
-/*
-@error('email')
-    <span class="invalid-feedback" role="alert">
-        <strong>{{ $message }}</strong>
-    </span>
-@enderror
-*/
-
 }

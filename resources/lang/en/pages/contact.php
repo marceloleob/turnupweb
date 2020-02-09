@@ -14,11 +14,11 @@ return [
 	'subtitle.text' => 'Have any questions? Reach out to us from our contact form and we will get back to you shortly.',
 
 	'placeholder'   => [
-		'name'    => 'Full Name',
-		'email'   => 'E-mail',
-		'phone'   => 'Phone',
-		'subject' => 'Subject',
-		'text'    => 'Message',
+		'name'    => '* Full Name',
+		'email'   => '* E-mail',
+		'phone'   => '* Phone',
+		'subject' => '* Subject',
+		'text'    => '* Message',
 	],
 
 	'send'          => ' Send ',

@@ -13,6 +13,7 @@ return [
     |
     */
 
+	'errors'               => 'Errors found:',
 	'google'               => 'Google believes you are a robot!',
 
     'accepted'             => 'The :attribute must be accepted.',

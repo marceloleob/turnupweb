@@ -1,4 +1,8 @@
-
+/***
+====================================================================
+	SCROLL UP
+====================================================================
+***/
 #scroll {
 	position: fixed;
 	display: none;
@@ -9,4 +13,27 @@
 }
 #scroll a {
 	display: contents;
+}
+
+/***
+====================================================================
+	MESSAGE FEEDBACK
+====================================================================
+***/
+
+span.help-block {
+	display: block;
+	padding-top: 5px;
+}
+.help-block {
+	font-size: 13px;
+	color: #bd362f;
+}
+.has-success input,
+.has-success textarea,
+.has-success select {
+	border: 1px solid #6E8847 !important;
+}
+.has-success .input-group-addon {
+	border: 1px solid #6E8847;
 }

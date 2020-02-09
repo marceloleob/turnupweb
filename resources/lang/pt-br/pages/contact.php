@@ -14,11 +14,11 @@ return [
 	'subtitle.text' => 'Tem alguma pergunta? Entre em contato conosco através do nosso formulário de contato e entraremos em contato em breve.',
 
 	'placeholder'   => [
-		'name'    => 'Nome Completo',
-		'email'   => 'E-mail',
-		'phone'   => 'Celular',
-		'subject' => 'Título',
-		'text'    => 'Mensagem',
+		'name'    => '* Nome Completo',
+		'email'   => '* E-mail',
+		'phone'   => '* Celular',
+		'subject' => '* Título',
+		'text'    => '* Mensagem',
 	],
 
 	'send'          => ' Enviar ',
