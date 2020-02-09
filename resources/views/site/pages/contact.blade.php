@@ -1,6 +1,6 @@
 @extends('site.layouts.pages')
 
-@section('title-page', ' - Contato')
+@section('subtitle', ' - ' . trans('pages/contact.title'))
 
 @section('js-custom')
     {!! Html::script('https://www.google.com/recaptcha/api.js?render=' . env('CAPTCHA_WEBSITE_KEY')) !!}

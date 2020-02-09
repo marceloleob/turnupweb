@@ -33,8 +33,11 @@ Route::group(['namespace' => 'Site'], function () {
 	Route::get('/', 'HomeController@index')->name('home');
 	Route::get('home', 'HomeController@index');
 
+	// Resume
+	Route::get('resume-marcelo-leopold', 'ResumeController@index')->name('resume');
+
 	// Contact Us
-	Route::get('contato', 'ContactController@index')->name('contact');
-	Route::post('contato', 'ContactController@send')->name('contact');
+	Route::get('contact', 'ContactController@index')->name('contact');
+	Route::post('contact', 'ContactController@send')->name('contact');
 
 });

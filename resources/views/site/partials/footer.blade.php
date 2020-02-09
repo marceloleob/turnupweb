@@ -17,6 +17,7 @@
 			<li><a href="https://www.facebook.com/marceloleob" target="_blank"><i class="jam jam-facebook"></i></a></li>
 			<li><a href="https://www.instagram.com/marceloleob" target="_blank"><i class="jam jam-instagram"></i></a></li>
 			<li><a href="https://www.linkedin.com/in/marcelo-leopold-batista" target="_blank"><i class="jam jam-linkedin"></i></a></li>
+			<li><a href="{!! route('resume') !!}"><i class="jam jam-document-f"></i></a></li>
 		</ul>
 		<div class="space30"></div>
 	</div>
