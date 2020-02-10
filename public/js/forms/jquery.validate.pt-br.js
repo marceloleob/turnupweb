@@ -75,7 +75,8 @@ $(document).ready(function()
 	 * Somente telefone
 	 */
     jQuery.validator.addMethod("phoneOnly", function (value, element) {
-        return this.optional(element) || /(\([1-9][0-9]\)?|[1-9][0-9])\s?([9]{1})?([0-9]{4})-?([0-9]{4})/i.test(value);
+        return this.optional(element) || /^(\([0-9]{3}\) |[0-9]{3}-)[0-9]{3}-[0-9]{4}$/i.test(value);
+        // return this.optional(element) || /(\([1-9][0-9]\)?|[1-9][0-9])\s?([9]{1})?([0-9]{4})-?([0-9]{4})/i.test(value);
     }, '<i class="jam jam-close-circle-f"></i> Este n&uacute;mero de telefone n&atilde;o &eacute; v&aacute;lido.');
 
 	/**
