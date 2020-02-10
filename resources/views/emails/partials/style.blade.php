@@ -70,7 +70,7 @@ BODY & CONTAINER
 	display: block;
 	margin: 0 auto;
 	max-width: 580px;
-	padding: 20px 0;
+	padding: 40px 0;
 }
 
 /* -------------------------------------

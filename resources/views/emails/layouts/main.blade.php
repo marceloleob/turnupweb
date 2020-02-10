@@ -16,7 +16,7 @@
 
 	<table role="presentation" border="0" cellpadding="0" cellspacing="0" class="body">
 		<tr>
-			<td height="50" colspan="3">&nbsp;</td>
+			<td height="25" colspan="3">&nbsp;</td>
 		</tr>
 		<tr>
 			<td height="75" class="bgcolor">&nbsp;</td>

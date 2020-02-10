@@ -53,30 +53,30 @@ class ContactController extends Controller
 	 *
 	 * @return Response
 	 */
-	// public function testCompany()
-	// {
-	// 	$params = [
-	// 		'name'    => 'Marcelo Leopold',
-	// 		'email'   => 'marceloleob@gmail.com',
-	// 		'phone'   => '(727) 238-4933',
-	// 		'subject' => 'Este é o título',
-	// 		'text'    => 'Mensagem teste!!!',
-	// 	];
+	public function testCompany()
+	{
+		$params = [
+			'name'    => 'Marcelo Leopold',
+			'email'   => 'marceloleob@gmail.com',
+			'phone'   => '(727) 238-4933',
+			'subject' => 'Este é o título',
+			'text'    => 'Mensagem teste!!!',
+		];
 
-	// 	return view('emails.pages.tocompany')->with($params);
-	// }
+		return view('emails.pages.tocompany')->with($params);
+	}
 
 	/**
 	 * Metodo criado para testar o template de email para o cliente
 	 *
 	 * @return Response
 	 */
-	// public function testCustomer()
-	// {
-	// 	$params = [
-	// 		'name' => 'Marcelo Leopold',
-	// 	];
+	public function testCustomer()
+	{
+		$params = [
+			'name' => 'Marcelo Leopold',
+		];
 
-	// 	return view('emails.pages.tocustomer')->with($params);
-	// }
+		return view('emails.pages.tocustomer')->with($params);
+	}
 }
