@@ -37,7 +37,7 @@ return [
 		],
 		'email' => [
 			'title' => 'E-mail',
-			'01'    => 'contact@marceloleodev.com',
+			'01'    => 'contact@turnupweb.com',
 			'02'    => 'marceloleodev@gmail.com',
 		],
 	],

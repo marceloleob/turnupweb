@@ -10,7 +10,7 @@ return [
 
 	'home'     => 'Home',
 	'projects' => 'Projects',
-	'about'    => 'About Us',
+	'about'    => 'About',
 	'contact'  => 'Contact',
 
 ];

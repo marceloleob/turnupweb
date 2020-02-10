@@ -10,7 +10,7 @@ return [
 
 	'home'     => 'Início',
 	'projects' => 'Projetos',
-	'about'    => 'Sobre nós',
+	'about'    => 'Sobre',
 	'contact'  => 'Contato',
 
 ];

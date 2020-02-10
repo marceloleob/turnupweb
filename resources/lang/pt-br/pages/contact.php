@@ -27,7 +27,7 @@ return [
 	'infos'         => [
 		'address' => [
 			'title' => 'Atendimento',
-			'01'    => 'Grande Boston,',
+			'01'    => 'Boston,',
 			'02'    => 'Massachusetts, US',
 		],
 		'phone' => [
@@ -37,7 +37,7 @@ return [
 		],
 		'email' => [
 			'title' => 'E-mail',
-			'01'    => 'contact@marceloleodev.com',
+			'01'    => 'contact@turnupweb.com',
 			'02'    => 'marceloleodev@gmail.com',
 		],
 	],
