@@ -3,14 +3,8 @@
 return [
 
     // DEVELOPER INFORMATION
-    'DEVELOPER_NAME'         => 'Marcelo Leopold Batista',
+    'DEVELOPER_NAME'         => 'Marcelo Leopold',
     'DEVELOPER_EMAIL'        => 'marceloleob@gmail.com',
-
-    // COMPANY INFORMATION
-    'COMPANY_NAME'           => env('APP_NAME'),
-    'COMPANY_EMAIL'          => '',
-    'COMPANY_SUBJECT_TO'     => '',
-    'COMPANY_SUBJECT_FROM'   => '',
 
     // PAGINATION
     'TOTAL_PAGE'             => 10,

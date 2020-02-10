@@ -47,4 +47,36 @@ class ContactController extends Controller
 
 		return redirect()->route('contact')->with('success', $response['message']);
 	}
+
+	/**
+	 * Metodo criado para testar o template de email para a empresa
+	 *
+	 * @return Response
+	 */
+	// public function testCompany()
+	// {
+	// 	$params = [
+	// 		'name'    => 'Marcelo Leopold',
+	// 		'email'   => 'marceloleob@gmail.com',
+	// 		'phone'   => '(727) 238-4933',
+	// 		'subject' => 'Este é o título',
+	// 		'text'    => 'Mensagem teste!!!',
+	// 	];
+
+	// 	return view('emails.pages.tocompany')->with($params);
+	// }
+
+	/**
+	 * Metodo criado para testar o template de email para o cliente
+	 *
+	 * @return Response
+	 */
+	// public function testCustomer()
+	// {
+	// 	$params = [
+	// 		'name' => 'Marcelo Leopold',
+	// 	];
+
+	// 	return view('emails.pages.tocustomer')->with($params);
+	// }
 }

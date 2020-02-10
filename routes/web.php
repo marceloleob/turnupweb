@@ -17,7 +17,7 @@ use Illuminate\Support\Facades\Session;
 /**
  * Change Language
  */
-Route::get('locale/{locale?}', function ($locale) {
+Route::get('locale/{locale}', function ($locale) {
 	// set new language
 	Session::put('locale', $locale);
 	// go back
@@ -39,5 +39,7 @@ Route::group(['namespace' => 'Site'], function () {
 	// Contact Us
 	Route::get('contact', 'ContactController@index')->name('contact');
 	Route::post('contact', 'ContactController@send')->name('contact');
+	Route::get('email-company', 'ContactController@testCompany');
+	Route::get('email-customer', 'ContactController@testCustomer');
 
 });

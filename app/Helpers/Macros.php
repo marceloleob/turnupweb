@@ -46,7 +46,7 @@ class Macros extends FormBuilder
                 // recupera o tipo
                 array_push($alerts, '<div class="feedback alert alert-' . (($type === 'error') ? 'danger' : $type) . ' fade in">');
                 array_push($alerts, '    <i class="jam ' . $ico . '"></i> &nbsp; ' . Session::get($type));
-                array_push($alerts, '    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>');
+                array_push($alerts, '    <button type="button" class="close" data-dismiss="alert" aria-hidden="true"></button>');
                 array_push($alerts, '</div>');
             }
         }
@@ -66,7 +66,7 @@ class Macros extends FormBuilder
         $alerts = [];
 
         array_push($alerts, '<div class="feedback alert alert-danger fade in">');
-        array_push($alerts, '    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>');
+        array_push($alerts, '    <button type="button" class="close" data-dismiss="alert" aria-hidden="true"></button>');
         array_push($alerts, '    <i class="jam jam-close-rectangle-f"></i> &nbsp; ' . trans('validation.errors'));
         array_push($alerts, '    <ul>');
         foreach ($errors->all() as $error) {

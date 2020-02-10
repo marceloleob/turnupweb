@@ -4,6 +4,12 @@ namespace App\Services;
 
 class CaptchaService extends BaseService
 {
+	/**
+	 * Verifica no GOOGLE se o envio e valido
+	 *
+	 * @param string $recaptcha
+	 * @return void
+	 */
     public static function check($recaptcha)
     {
         $url  = 'https://www.google.com/recaptcha/api/siteverify';
@@ -11,7 +17,6 @@ class CaptchaService extends BaseService
             'secret'   => env('CAPTCHA_SECRET_KEY'),
             'response' => $recaptcha
         ];
-
         $options = [
             'http' => [
                 'header'  => "Content-type: application/x-www-form-urlencoded\r\n",

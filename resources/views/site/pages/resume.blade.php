@@ -1,33 +1,14 @@
-@extends('site.layouts.pages')
+@extends('site.layouts.resume')
 
 @section('subtitle', ' - ' . trans('pages/contact.title'))
 
+@section('css-custom')
+	{!! Html::style('css/libs/fontawesome.min.css') !!}
+	{!! Html::style('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900') !!}
+	{!! Html::style('css/resume.css') !!}
+@stop
+
 @section('content')
-
-
-
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-
-	<title>Resume - Marcelo Leopold</title>
-
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<meta name="author" content="Marcelo Leopold - marceloleob@gmail.com" />
-
-	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
-
-    <link rel="stylesheet" type="text/css" href="css/reset.css">
-    <link rel="stylesheet" type="text/css" href="css/libs/bootstrap-4.1.3.min.css">
-    <link rel="stylesheet" type="text/css" href="css/libs/fontawesome-all-5.5.0.min.css">
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-</head>
-
-<body>
 
 <div class="main-wrapper">
     <div class="container px-3 px-lg-5">
@@ -316,13 +297,8 @@
 
         </article>
     </div>
-
-    <footer class="footer text-center py-4">
-        <!-- This template is released under the Creative Commons Attribution 3.0 License. Please keep the attribution link below when using for your own project. Thank you for your support. :) If you'd like to use the template without the attribution, you can buy the commercial license via our website: themes.3rdwavemedia.com -->
-        <small class="copyright text-muted">Designed with <i class="fas fa-heart"></i> by <a class="theme-link" href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers</small>
-    </footer>
-
 </div>
 
-</body>
-</html>
+<div class="space100"></div>
+
+@stop
