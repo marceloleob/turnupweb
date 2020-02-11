@@ -4,13 +4,13 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Home - Translate
+    | Home - Translate (EN)
     |--------------------------------------------------------------------------
     */
 
 	'slide' => [
 		'01' => [
-			'title'  => 'PHP Web Development',
+			'title'  => 'Web Development',
 			'text'   => 'The best design to represent your business.',
 			'button' => 'See Our Projects',
 		],

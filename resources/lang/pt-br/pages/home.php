@@ -4,13 +4,13 @@ return [
 
 	/*
     |--------------------------------------------------------------------------
-    | Home - Translate
+    | Home - Translate (PT-BR)
     |--------------------------------------------------------------------------
 	*/
 
 	'slide' => [
 		'01' => [
-			'title'  => 'Desenvolvedor de Sites PHP',
+			'title'  => 'Desenvolvedor de Sites',
 			'text'   => 'Temos os melhores designs para representar sua empresa.',
 			'button' => 'Veja Nossos Projetos',
 		],

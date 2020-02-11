@@ -16,10 +16,10 @@
 			{{-- TRANSLATE OPTIONS --}}
 			<li class="nav-item">
 				<button class="btn language {{ ($locale == 'en') ? 'btn-red active' : '' }}">
-					<a href="{!! url('locale', 'en') !!}"><img src="images/{{ ($locale == 'en') ? 'en' : 'en-fade' }}.png" alt="English" /></a>
+					<a href="{!! url('locale', 'en') !!}"><img src="images/{{ ($locale == 'en') ? 'en' : 'en-fade' }}.png" title="English Version" class="hover has-tooltip" data-placement="bottom" /></a>
 				</button>
 				<button class="btn language {{ ($locale == 'pt-br') ? 'btn-green active' : '' }}">
-					<a href="{!! url('locale', 'pt-br') !!}"><img src="images/{{ ($locale == 'pt-br') ? 'pt-br' : 'pt-br-fade' }}.png" alt="Português" /></a>
+					<a href="{!! url('locale', 'pt-br') !!}"><img src="images/{{ ($locale == 'pt-br') ? 'pt-br' : 'pt-br-fade' }}.png" title="Versão em Português" class="hover has-tooltip" data-placement="bottom" /></a>
 				</button>
 			</li>
 		</ul>
@@ -38,7 +38,7 @@
 		<ul class="navbar-nav mx-auto">
 			<li class="nav-item"><a class="nav-link" href="{!! route('home') !!}">{!! trans('pages/menu.home') !!}</a></li>
 			<li class="nav-item"><a class="nav-link" href="#">{!! trans('pages/menu.projects') !!}</a></li>
-			<li class="nav-item"><a class="nav-link" href="#">{!! trans('pages/menu.about') !!}</a></li>
+			<li class="nav-item"><a class="nav-link" href="{!! route('about') !!}">{!! trans('pages/menu.about') !!}</a></li>
 			<li class="nav-item"><a class="nav-link" href="{!! route('contact') !!}">{!! trans('pages/menu.contact') !!}</a></li>
 		</ul>
 	</div>

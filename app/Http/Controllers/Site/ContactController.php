@@ -6,7 +6,6 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests\Site\ContactRequest;
 use App\Services\CaptchaService;
 use App\Services\ContactService;
-use Illuminate\Http\Request;
 
 class ContactController extends Controller
 {

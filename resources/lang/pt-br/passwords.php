@@ -4,7 +4,7 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Password Reset Language Lines
+    | Password Reset - Translate (PT-BR)
     |--------------------------------------------------------------------------
     |
     | The following language lines are the default lines which match reasons

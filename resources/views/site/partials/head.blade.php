@@ -21,7 +21,6 @@
 
 {{-- CSS LIBS --}}
 {!! Html::style('css/libs/bootstrap.min.css') !!}
-{!! Html::style('css/libs/fontawesome.min.css') !!}
 {!! Html::style('css/libs/plugins.css') !!}
 {!! Html::style('style/revolution/css/settings.css') !!}
 {!! Html::style('style/revolution/css/layers.css') !!}
@@ -29,7 +28,7 @@
 {!! Html::style('style/type/type.css') !!}
 {!! Html::style('css/style.css') !!}
 {!! Html::style('style/css/color/blue.css') !!}
-{!! Html::style('style/css/font/font2.css') !!}
+{!! Html::style('css/font/font4.css') !!}
 
 {{-- CSS CUSTOM --}}
 {!! Html::style('css/custom.css') !!}

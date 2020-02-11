@@ -4,13 +4,13 @@ return [
 
 	/*
     |--------------------------------------------------------------------------
-    | Contact - Translate
+    | Contact - Translate (PT-BR)
     |--------------------------------------------------------------------------
 	*/
 
 	'title'         => 'Contato',
-	'title.text'    => 'Vamos marcar um encontro?',
-	'subtitle'      => 'Mande sua Mensagem',
+	'title.text'    => 'Vamos marcar uma reunião?',
+	'subtitle'      => 'Mande sua mensagem',
 	'subtitle.text' => 'Tem alguma pergunta? Entre em contato conosco através do nosso formulário de contato e entraremos em contato em breve.',
 
 	'placeholder'   => [

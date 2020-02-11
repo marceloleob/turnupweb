@@ -4,7 +4,7 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Authentication Language Lines
+    | Authentication - Translate (EN)
     |--------------------------------------------------------------------------
     |
     | The following language lines are used during authentication for various
