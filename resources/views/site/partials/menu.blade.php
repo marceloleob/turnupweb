@@ -37,7 +37,7 @@
 		{{-- LINKS --}}
 		<ul class="navbar-nav mx-auto">
 			<li class="nav-item"><a class="nav-link" href="{!! route('home') !!}">{!! trans('pages/menu.home') !!}</a></li>
-			<li class="nav-item"><a class="nav-link" href="#">{!! trans('pages/menu.projects') !!}</a></li>
+			{{-- <li class="nav-item"><a class="nav-link" href="#">{!! trans('pages/menu.projects') !!}</a></li> --}}
 			<li class="nav-item"><a class="nav-link" href="{!! route('about') !!}">{!! trans('pages/menu.about') !!}</a></li>
 			<li class="nav-item"><a class="nav-link" href="{!! route('contact') !!}">{!! trans('pages/menu.contact') !!}</a></li>
 		</ul>

@@ -9,7 +9,7 @@ return [
 	*/
 
 	'title'         => 'Contact',
-	'title.text'    => 'Let`s set up a meeting?',
+	'title.text'    => 'Let\'s set up a meeting?',
 	'subtitle'      => 'Get in Touch',
 	'subtitle.text' => 'Have any questions? Reach out to us from our contact form and we will get back to you shortly.',
 

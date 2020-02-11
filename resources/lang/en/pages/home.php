@@ -12,17 +12,17 @@ return [
 		'01' => [
 			'title'  => 'Web Development',
 			'text'   => 'The best design to represent your business.',
-			'button' => 'See Our Projects',
+			'button' => 'Talk to us!', // See Our Projects
 		],
 		'02' => [
 			'title'  => 'Responsive Website',
 			'text'   => 'All of our sites can be viewed on any device (desktop, tablet and mobile).',
-			'button' => 'See Our Projects',
+			'button' => 'Talk to us!', // See Our Projects
 		],
 		'03' => [
 			'title'  => 'Fully Customized Websites',
 			'text'   => 'We create customized systems for your business.',
-			'button' => 'See Our Projects',
+			'button' => 'Talk to us!', // See Our Projects
 		]
 	],
 
@@ -53,12 +53,12 @@ return [
 			'legend'  => 'WHY CHOOSE US?',
 			'title'   => 'Why is Search Engine Optimization important for your business?',
 			'context' => [
-				'text'   => 'With SEO Services, your business will to increase its visibility in search results on search engines like Google and Bing.',
+				'text'   => 'With SEO Services, your business will increase its visibility in search results on search engines like Google and Bing.',
 				'topics' => [
 					'01' => 'More people will find your business;',
 					'02' => 'Your earnings will increase considerably;',
 					'03' => 'We consider all details important to create your website;',
-					'04' => 'Partnering in our clients ’success.',
+					'04' => 'Partnership in the success of our customers.',
 				]
 			],
 		],

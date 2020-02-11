@@ -28,7 +28,7 @@ return [
     'before_or_equal'      => 'O campo <strong>:attribute</strong> deve conter uma data inferior ou igual a :date.',
     'between'              => [
         'numeric' => 'O campo <strong>:attribute</strong> deve conter um número entre <strong>:min</strong> e <strong>:max</strong>.',
-        'file'    => 'O campo <strong>:attribute</strong> deve conter um arquivo de <strong>:min</strong> a <strong>:max</strong> kilobytes.',
+        'file'     => 'O campo <strong>:attribute</strong> deve conter um arquivo de <strong>:min</strong> a <strong>:max</strong> kilobytes.',
         'string'  => 'O campo <strong>:attribute</strong> deve conter entre <strong>:min</strong> a <strong>:max</strong> caracteres.',
         'array'   => 'O campo <strong>:attribute</strong> deve conter de <strong>:min</strong> a <strong>:max</strong> itens.',
     ],
@@ -49,13 +49,13 @@ return [
     'filled'                => 'O campo <strong>:attribute</strong> é obrigatório.',
     'gt'                   => [
         'numeric' => 'O campo <strong>:attribute</strong> deve ser maior que <strong>:value</strong>.',
-        'file'    => 'O arquivo <strong>:attribute</strong> deve ser maior que <strong>:value</strong> kilobytes.',
+        'file'     => 'O arquivo <strong>:attribute</strong> deve ser maior que <strong>:value</strong> kilobytes.',
         'string'  => 'O campo <strong>:attribute</strong> deve ser maior que <strong>:value</strong> caracteres.',
         'array'   => 'O campo <strong>:attribute</strong> deve ter mais que <strong>:value</strong> itens.',
     ],
     'gte'                  => [
         'numeric' => 'O campo <strong>:attribute</strong> deve ser maior ou igual a <strong>:value</strong>.',
-        'file'    => 'O arquivo <strong>:attribute</strong> deve ser maior ou igual a <strong>:value</strong> kilobytes.',
+        'file'     => 'O arquivo <strong>:attribute</strong> deve ser maior ou igual a <strong>:value</strong> kilobytes.',
         'string'  => 'O campo <strong>:attribute</strong> deve ser maior ou igual a <strong>:value</strong> caracteres.',
         'array'   => 'O campo <strong>:attribute</strong> deve ter <strong>:value</strong> itens ou mais.',
     ],
@@ -69,19 +69,19 @@ return [
     'json'                 => 'O campo <strong>:attribute</strong> deve conter uma string JSON válida.',
     'lt'                   => [
         'numeric' => 'O campo <strong>:attribute</strong> deve ser menor que <strong>:value</strong>.',
-        'file'    => 'O arquivo <strong>:attribute</strong> ser menor que <strong>:value</strong> kilobytes.',
+        'file'     => 'O arquivo <strong>:attribute</strong> ser menor que <strong>:value</strong> kilobytes.',
         'string'  => 'O campo <strong>:attribute</strong> deve ser menor que <strong>:value</strong> caracteres.',
         'array'   => 'O campo <strong>:attribute</strong> deve ter menos que <strong>:value</strong> itens.',
     ],
     'lte'                  => [
         'numeric' => 'O campo <strong>:attribute</strong> deve ser menor ou igual a <strong>:value</strong>.',
-        'file'    => 'O arquivo <strong>:attribute</strong> ser menor ou igual a <strong>:value</strong> kilobytes.',
+        'file'     => 'O arquivo <strong>:attribute</strong> ser menor ou igual a <strong>:value</strong> kilobytes.',
         'string'  => 'O campo <strong>:attribute</strong> deve ser menor ou igual a <strong>:value</strong> caracteres.',
         'array'   => 'O campo <strong>:attribute</strong> não deve ter mais que <strong>:value</strong> itens.',
     ],
     'max'                  => [
         'numeric' => 'O campo <strong>:attribute</strong> não pode conter um valor superior a <strong>:max</strong>.',
-        'file'    => 'O campo <strong>:attribute</strong> não pode conter um arquivo com mais de <strong>:max</strong> kilobytes.',
+        'file'     => 'O campo <strong>:attribute</strong> não pode conter um arquivo com mais de <strong>:max</strong> kilobytes.',
         'string'  => 'O campo <strong>:attribute</strong> não pode conter mais de <strong>:max</strong> caracteres.',
         'array'   => 'O campo <strong>:attribute</strong> deve conter no máximo <strong>:max</strong> itens.',
     ],
@@ -89,7 +89,7 @@ return [
     'mimetypes'            => 'O campo <strong>:attribute</strong> deve conter um arquivo do tipo: <strong>:values</strong>.',
     'min'                  => [
         'numeric' => 'O campo <strong>:attribute</strong> deve conter um número superior ou igual a <strong>:min</strong>.',
-        'file'    => 'O campo <strong>:attribute</strong> deve conter um arquivo com no mínimo <strong>:min</strong> kilobytes.',
+        'file'     => 'O campo <strong>:attribute</strong> deve conter um arquivo com no mínimo <strong>:min</strong> kilobytes.',
         'string'  => 'O campo <strong>:attribute</strong> deve conter no mínimo <strong>:min</strong> caracteres.',
         'array'   => 'O campo <strong>:attribute</strong> deve conter no mínimo <strong>:min</strong> itens.',
     ],
@@ -108,7 +108,7 @@ return [
     'same'                 => 'Os campos <strong>:attribute</strong> e <strong>:other</strong> devem conter valores iguais.',
     'size'                 => [
         'numeric' => 'O campo <strong>:attribute</strong> deve conter o número <strong>:size</strong>.',
-        'file'    => 'O campo <strong>:attribute</strong> deve conter um arquivo com o tamanho de <strong>:size</strong> kilobytes.',
+        'file'     => 'O campo <strong>:attribute</strong> deve conter um arquivo com o tamanho de <strong>:size</strong> kilobytes.',
         'string'  => 'O campo <strong>:attribute</strong> deve conter <strong>:size</strong> caracteres.',
         'array'   => 'O campo <strong>:attribute</strong> deve conter <strong>:size</strong> itens.',
     ],
@@ -204,20 +204,6 @@ return [
         'excerpt'               => 'resumo',
 
         // CUSTOM THIS SITE
-        'type_id'               => 'tipo do imóvel',
-        'owner_user'            => 'proprietário',
-        'advertise_type'        => 'tipo do anúncio',
-        'group_type'            => 'comercial ou residencial',
-        'property_type'         => 'tipo do imóvel',
-        'bathroom'              => 'banheiro',
-        'bedroom'               => 'quartos',
-        'master'                => 'suítes',
-        'parking'               => 'vagas',
-        'square_meter'          => 'metros quadrados',
-        'price'                 => 'preço da venda ou aluguel',
-        'condo_fee'             => 'preço do condomínio',
-        'tax_fee'               => 'preço do IPTU',
-        // FEATURES
-        'feature'               => 'características',
+
     ],
 ];

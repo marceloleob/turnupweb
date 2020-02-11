@@ -12,17 +12,17 @@ return [
 		'01' => [
 			'title'  => 'Desenvolvedor de Sites',
 			'text'   => 'Temos os melhores designs para representar sua empresa.',
-			'button' => 'Veja Nossos Projetos',
+			'button' => 'Fale com a gente!', // Veja Nossos Projetos
 		],
 		'02' => [
 			'title'  => 'Sites Responsivos',
 			'text'   => 'Todos os nossos sites podem ser visualizados em qualquer dispositivo (computador, tablet e celular).',
-			'button' => 'Veja Nossos Projetos',
+			'button' => 'Fale com a gente!', // Veja Nossos Projetos
 		],
 		'03' => [
 			'title'  => 'Sites totalmente personalizados',
 			'text'   => 'Criamos sistemas personalizados para o seu negócio.',
-			'button' => 'Veja Nossos Projetos',
+			'button' => 'Fale com a gente!', // Veja Nossos Projetos
 		]
 	],
 
