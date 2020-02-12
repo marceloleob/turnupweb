@@ -13,8 +13,16 @@
 <meta name="csrf-token" content="{!! csrf_token() !!}" />
 
 {{-- ICO --}}
-<link rel="shortcut icon" href="{!! asset('favicon.ico') !!}" type="image/x-icon">
 <link rel="icon" href="{!! asset('favicon.ico') !!}" type="image/x-icon">
+<link rel="icon" sizes="16x16" href="{!! asset('favicon-16.png') !!}" type="image/png">
+<link rel="icon" sizes="32x32" href="{!! asset('favicon-32.png') !!}" type="image/jpeg">
+
+<link rel="apple-touch-icon" sizes="57x57" href="{!! asset('favicon-32.png') !!}">
+<link rel="apple-touch-icon" sizes="72x72" href="{!! asset('favicon-72.png') !!}">
+<link rel="apple-touch-icon" sizes="114x114" href="{!! asset('favicon-114.png') !!}">
+
+<link rel="shortcut icon" href="{!! asset('favicon.ico') !!}" type="image/x-icon">
+<link rel="shortcut icon" href="{!! asset('favicon.ico') !!}">
 
 {{-- Reseta CSS --}}
 {!! Html::style('css/reset.css') !!}
