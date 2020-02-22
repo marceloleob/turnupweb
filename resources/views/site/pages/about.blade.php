@@ -3,6 +3,7 @@
 @section('subtitle', ' - ' . trans('pages/about.title'))
 
 @section('content')
+
     {{-- BREADCRUMB --}}
 	<div class="wrapper image-wrapper bg-image page-title-wrapper inverse-text" data-image-src="style/images/art/slider-bg7.jpg">
 		<div class="container inner text-center">
