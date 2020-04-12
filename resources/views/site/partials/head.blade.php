@@ -1,14 +1,14 @@
-
 {{-- GOOGLE ANALYTICS --}}
-@if (env('APP_ENV') == 'production')
-	{{-- Global site tag (gtag.js) - Google Analytics --}}
-	<script async src="https://www.googletagmanager.com/gtag/js?id={!! env('GOOGLE_ANALYTICS_ID') !!}"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
-		gtag('config', "{!! env('GOOGLE_ANALYTICS_ID') !!}");
-	</script>
+@if (Config::get('app.env') == 'production')
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-158556724-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-158556724-1');
+</script>
 @endif
 {{-- GOOGLE ANALYTICS --}}
 
