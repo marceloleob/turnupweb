@@ -18,16 +18,33 @@ class Phone implements Filter
         if (empty($value)) {
             return '';
         }
+		// // recupera o ddd
+		// $ddd    = substr($value, 0, 2);
+		// // recupera o numero
+		// $numero = substr($value, 2);
+        // // quantidade de numeros no prefixo
+        // $qtde   = 4;
+		// // verifica o tamanho do numero
+		// if (strlen($numero) == 9) {
+		// 	// quantidade de numeros no prefixo
+		// 	$qtde = 5;
+		// }
+		// // separa o numero
+		// $prefixo = substr($numero, 0, $qtde);
+		// $sufixo  = substr($numero, $qtde);
+		// // retorna o telefone formatado
+		// return '(' . $ddd . ') ' . $prefixo . '-' . $sufixo;
+
 		// recupera o ddd
-		$ddd    = substr($value, 0, 2);
+		$ddd    = substr($value, 0, 3);
 		// recupera o numero
-		$numero = substr($value, 2);
+		$numero = substr($value, 3);
         // quantidade de numeros no prefixo
-        $qtde   = 4;
+        $qtde   = 3;
 		// verifica o tamanho do numero
-		if (strlen($numero) == 9) {
+		if (strlen($numero) == 7) {
 			// quantidade de numeros no prefixo
-			$qtde = 5;
+			$qtde = 3;
 		}
 		// separa o numero
 		$prefixo = substr($numero, 0, $qtde);
