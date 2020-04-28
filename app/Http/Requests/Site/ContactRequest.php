@@ -47,7 +47,7 @@ class ContactRequest extends BaseRequest
 		'email'   => 'required|min:3|max:100|email',
 		'phone'   => 'required',
 		'subject' => 'required|min:2|max:100',
-		'text'    => 'required|min:5|max:2000',
+		'text'    => 'required|min:5|max:5000',
 		'read'    => 'boolean',
 	];
 }

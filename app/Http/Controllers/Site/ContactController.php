@@ -41,6 +41,7 @@ class ContactController extends Controller
 		$response = ContactService::send($data);
 		// check error
 		if ($response['type'] == 'error') {
+			dd($response);
 			return redirect()->route('contact')->with('error', $response['message'])->withInput();
 		}
 
