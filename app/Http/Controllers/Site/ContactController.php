@@ -30,18 +30,17 @@ class ContactController extends Controller
 		// sanitized and validated data
 		$data = $request->validated();
 
-		// // valida o captcha
-		// $result = CaptchaService::check($request['recaptcha']);
-		// // verifica se validou
-		// if ($result->success != true) {
-		// 	return redirect()->route('contact')->with('error', trans('validation.google'));
-		// }
+		// valida o captcha
+		$result = CaptchaService::check($request['recaptcha']);
+		// verifica se validou
+		if ($result->success != true) {
+			return redirect()->route('contact')->with('error', trans('validation.google'));
+		}
 
 		// save
 		$response = ContactService::send($data);
 		// check error
 		if ($response['type'] == 'error') {
-			dd($data, $response);
 			return redirect()->route('contact')->with('error', $response['message'])->withInput();
 		}
 
