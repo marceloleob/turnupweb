@@ -1,10 +1,16 @@
 <?php
 
+use Illuminate\Support\Facades\Config;
+
 return [
 
     // DEVELOPER INFORMATION
     'DEVELOPER_NAME'         => 'Marcelo Leopold',
     'DEVELOPER_EMAIL'        => 'marceloleob@gmail.com',
+
+    // COMPANY INFORMATION
+    'COMPANY_NAME'           => Config::get('app.name'),
+	'COMPANY_EMAIL'          => 'contact@turnupweb.com',
 
     // PAGINATION
     'TOTAL_PAGE'             => 10,
