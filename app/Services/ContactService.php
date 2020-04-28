@@ -18,13 +18,13 @@ class ContactService extends BaseService
 	public static function send($data)
 	{
 		try {
-			// envia email para a empresa
-			Mail::send('emails.pages.tocompany', $data, function ($message) {
-				// seta os paramentros no email
-				$message
-					->to(config('constants.COMPANY_EMAIL'), config('constants.COMPANY_NAME'))
-					->subject(trans('pages/contact.email.company.subject'));
-			});
+			// // envia email para a empresa
+			// Mail::send('emails.pages.tocompany', $data, function ($message) {
+			// 	// seta os paramentros no email
+			// 	$message
+			// 		->to(config('constants.COMPANY_EMAIL'), config('constants.COMPANY_NAME'))
+			// 		->subject(trans('pages/contact.email.company.subject'));
+			// });
 
 			// envia email para o usuario
 			Mail::send('emails.pages.tocustomer', $data, function ($message) use ($data) {
