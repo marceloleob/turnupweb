@@ -3,7 +3,7 @@
 @section('subtitle', ' - ' . trans('pages/contact.title'))
 
 @section('js-custom')
-    {!! Html::script('https://www.google.com/recaptcha/api.js?render=' . env('CAPTCHA_WEBSITE_KEY')) !!}
+    {!! Html::script('https://www.google.com/recaptcha/api.js?render=' . config('constants.CAPTCHA_WEBSITE_KEY')) !!}
     {!! Html::script('js/forms/jquery.validate.min.js', ['defer' => 'defer']) !!}
     {!! Html::script('js/forms/jquery.validate.' . $locale . '.js', ['defer' => 'defer']) !!}
     {!! Html::script('js/forms/jquery.maskedinput.min.js', ['defer' => 'defer']) !!}
@@ -80,7 +80,7 @@
 							<div class="form-row">
 								<div class="col-lg-12 col-xl-12">
 									<div class="form-group">
-										{!! Form::hidden('site_key', env('CAPTCHA_WEBSITE_KEY'), ['id' => 'site_key']) !!}
+										{!! Form::hidden('site_key', config('constants.CAPTCHA_WEBSITE_KEY'), ['id' => 'site_key']) !!}
 										{!! Form::hidden('recaptcha', '', ['id' => 'recaptcha']) !!}
 										{!! Form::button(trans('pages/contact.send'), ['type' => 'submit', 'class' => 'submit btn btn_primary']) !!}
 									</div>

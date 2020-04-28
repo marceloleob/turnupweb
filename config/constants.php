@@ -19,5 +19,10 @@ return [
     'PICTURES_PATH_MSG'      => '2 MB',
     'PICTURES_NOTAVAILABLE'  => 'images/no-available-370x278.png',
 
+    // GOOGLE CONFIGS
+    'GOOGLE_ANALYTICS_ID'    => 'UA-158556724-1',
+    'CAPTCHA_SECRET_KEY'     => '6LdISdcUAAAAALdiMvIP0dKwF35GsxE0UeLvfw4x',
+    'CAPTCHA_WEBSITE_KEY'    => '6LdISdcUAAAAAPa7P9_hOCg_5NU0Kn73_WDE-0tE',
+
 ];
 

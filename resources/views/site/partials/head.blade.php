@@ -1,13 +1,13 @@
 {{-- GOOGLE ANALYTICS --}}
-@if (Config::get('app.env') == 'production')
+@if (App::environment('production'))
 <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-158556724-1"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id={!! config('constants.GOOGLE_ANALYTICS_ID') !!}"></script>
 <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
 
-    gtag('config', 'UA-158556724-1');
+    gtag('config', "{!! config('constants.GOOGLE_ANALYTICS_ID') !!}");
 </script>
 @endif
 {{-- GOOGLE ANALYTICS --}}

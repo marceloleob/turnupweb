@@ -14,7 +14,7 @@ class CaptchaService extends BaseService
     {
         $url  = 'https://www.google.com/recaptcha/api/siteverify';
         $test = [
-            'secret'   => env('CAPTCHA_SECRET_KEY'),
+            'secret'   => config('constants.CAPTCHA_SECRET_KEY'),
             'response' => $recaptcha
         ];
         $options = [
