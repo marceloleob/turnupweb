@@ -32,18 +32,17 @@
 	        <div class="space40"></div>
 			<div class="row">
 				<div class="col-lg-12">
-					{!! Form::boxMessage($errors) !!}
+
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-lg-7">
-					{!! Form::open(['id' => 'form-contact', 'route' => 'contact', 'method' => 'POST', 'role' => 'form', 'class' => 'form fields-white']) !!}
+					{!! Form::open(['id' => 'form-contact', 'route' => 'contact.send', 'method' => 'POST', 'role' => 'form', 'class' => 'form fields-white']) !!}
 						<div class="controls">
 							<div class="form-row">
 								<div class="col-lg-12 col-xl-12">
 									<div class="form-group">
 										{!! Form::text('name', old('name'), ['class' => 'form-control text', 'placeholder' => trans('pages/contact.placeholder.name')]) !!}
-                                    	{!! Form::errorField('name', $errors) !!}
 									</div>
 								</div>
 							</div>
@@ -51,13 +50,11 @@
 								<div class="col-lg-12 col-xl-6">
 									<div class="form-group">
 										{!! Form::text('email', old('email'), ['class' => 'form-control text', 'placeholder' => trans('pages/contact.placeholder.email')]) !!}
-										{!! Form::errorField('email', $errors) !!}
 									</div>
 								</div>
 								<div class="col-lg-12 col-xl-6">
 									<div class="form-group">
 										{!! Form::text('phone', old('phone'), ['class' => 'form-control phone phoneOnly', 'placeholder' => trans('pages/contact.placeholder.phone')]) !!}
-										{!! Form::errorField('phone', $errors) !!}
 									</div>
 								</div>
 							</div>
@@ -65,7 +62,6 @@
 								<div class="col-lg-12 col-xl-12">
 									<div class="form-group">
 										{!! Form::text('subject', old('subject'), ['class' => 'form-control text', 'placeholder' => trans('pages/contact.placeholder.subject')]) !!}
-										{!! Form::errorField('subject', $errors) !!}
 									</div>
 								</div>
 							</div>
@@ -73,7 +69,6 @@
 								<div class="col-lg-12 col-xl-12">
 									<div class="form-group">
 										{!! Form::textarea('text', old('text'), ['class' => 'form-control textarea', 'placeholder' => trans('pages/contact.placeholder.text'), 'rows' => '5']) !!}
-										{!! Form::errorField('text', $errors) !!}
 									</div>
 								</div>
 							</div>

@@ -46,7 +46,7 @@
 					<p>{!! trans('pages/about.blocks.02.text03') !!}</p>
 					<p>{!! trans('pages/about.blocks.02.text04') !!}</p>
 					<div class="space10"></div>
-					<a href="{!! route('contact') !!}" class="btn btn-yellow">{!! trans('pages/about.blocks.02.button') !!}</a>
+					<a href="{!! route('contact.index') !!}" class="btn btn-yellow">{!! trans('pages/about.blocks.02.button') !!}</a>
 				</div>
 			</div>
 		</div>
@@ -129,7 +129,7 @@
 					<p>{!! trans('pages/about.blocks.04.text03') !!}</p>
 					<p>{!! trans('pages/about.blocks.04.text04') !!}</p>
 					<div class="space10"></div>
-					<a href="{!! route('contact') !!}" class="btn btn-sky">{!! trans('pages/about.blocks.04.button') !!}</a>
+					<a href="{!! route('contact.index') !!}" class="btn btn-sky">{!! trans('pages/about.blocks.04.button') !!}</a>
 				</div>
 			</div>
 		</div>

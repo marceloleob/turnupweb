@@ -117,7 +117,7 @@
 					<div class="space20"></div>
 					<p>{!! trans('pages/home.wrapper.04.context.text') !!}</p>
 					<div class="space10"></div>
-					<a href="{!! route('contact') !!}" class="btn btn-default">{!! trans('pages/home.wrapper.04.context.button') !!}</a>
+					<a href="{!! route('contact.index') !!}" class="btn btn-default">{!! trans('pages/home.wrapper.04.context.button') !!}</a>
 				</div>
 			</div>
 		</div>

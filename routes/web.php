@@ -1,5 +1,8 @@
 <?php
 
+use App\Http\Controllers\Site\AboutController;
+use App\Http\Controllers\Site\ContactController;
+use App\Http\Controllers\Site\HomeController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Session;
 
@@ -17,12 +20,12 @@ use Illuminate\Support\Facades\Session;
 /**
  * Change Language
  */
-Route::get('locale/{locale}', function ($locale) {
-	// set new language
-	Session::put('locale', $locale);
-	// go back
-	return redirect()->back();
-});
+// Route::get('locale/{locale}', function ($locale) {
+// 	// set new language
+// 	Session::put('locale', $locale);
+// 	// go back
+// 	return redirect()->back();
+// });
 
 
 /**
@@ -30,13 +33,12 @@ Route::get('locale/{locale}', function ($locale) {
  */
 Route::group(['namespace' => 'Site'], function () {
 	// Home
-	Route::get('/', 'HomeController@index')->name('home');
-	Route::get('home', 'HomeController@index');
+	Route::get('/', [HomeController::class, 'index'])->name('home');
 	// About
-	Route::get('about', 'AboutController@index')->name('about');
+	Route::get('about', [AboutController::class, 'index'])->name('about');
 	// Contact
-	Route::get('contact', 'ContactController@index')->name('contact');
-	Route::post('contact', 'ContactController@send')->name('contact');
+	Route::get('contact', [ContactController::class, 'index'])->name('contact.index');
+	Route::post('contact', [ContactController::class, 'send'])->name('contact.send');
 	// Route::get('email-company', 'ContactController@testCompany');
 	// Route::get('email-customer', 'ContactController@testCustomer');
 

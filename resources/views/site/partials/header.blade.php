@@ -41,7 +41,7 @@
 					data-textAlign="['left','left','center','center']"
 					data-frames='[{"delay":2000,"speed":1200,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
 					data-responsive="on"
-					data-responsive_offset="on" style="z-index: 9;" href="{!! route('contact') !!}">{!! trans('pages/home.slide.01.button') !!}
+					data-responsive_offset="on" style="z-index: 9;" href="{!! route('contact.index') !!}">{!! trans('pages/home.slide.01.button') !!}
 				</a>
 				<div class="tp-caption"
 					data-x="['left','left','center','center']"
@@ -113,7 +113,7 @@
 					data-textAlign="['left','left','center','center']"
 					data-frames='[{"delay":2000,"speed":1200,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
 					data-responsive="on"
-					data-responsive_offset="on" style="z-index: 9;" href="{!! route('contact') !!}">{!! trans('pages/home.slide.02.button') !!}
+					data-responsive_offset="on" style="z-index: 9;" href="{!! route('contact.index') !!}">{!! trans('pages/home.slide.02.button') !!}
 				</a>
 				<div class="tp-caption"
 					data-x="['right','right','center','center']"
@@ -184,7 +184,7 @@
 					data-textAlign="['left','left','center','center']"
 					data-frames='[{"delay":2000,"speed":1200,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
 					data-responsive="on"
-					data-responsive_offset="on" style="z-index: 9;" href="{!! route('contact') !!}">{!! trans('pages/home.slide.03.button') !!}
+					data-responsive_offset="on" style="z-index: 9;" href="{!! route('contact.index') !!}">{!! trans('pages/home.slide.03.button') !!}
 				</a>
 				<div class="tp-caption"
 					data-x="['left','left','center','center']"
